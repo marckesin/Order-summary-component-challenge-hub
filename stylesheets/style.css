@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+.image-container {
+  height: 100%;
+  background-image: url("../images/illustration-hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.summary-container {
+  width: 455px;
+  height: 695px;
+  margin: auto;
+  background-color: lightblue;
+  /* background-color: hsl(0, 0%, 100%); */
+  border-radius: 15px;
+}
