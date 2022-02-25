@@ -1,60 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@use "reset";
 
-#root,
-#__next {
-  isolation: isolate;
-}
-
-* {
-  margin: 0;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  font-size: 16px;
-  font-family: "Red Hat Display", sans-serif;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(228, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
 
 button {
   font-size: 16px;
-  color: white;
-  background-color: #3829e0;
+  color: hsl(0, 0%, 100%);
+  background-color: $bright-blue;
   width: 100%;
   box-shadow: 0 12px 30px -8px #8785de;
   font-weight: 600;
@@ -86,9 +41,10 @@ main {
 
 .attribution {
   font-size: 11px;
-}
-.attribution a {
-  color: #3e52a3;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 
 .cancel-order {
@@ -97,7 +53,7 @@ main {
 }
 
 .cancel-order:hover {
-  color: #1f2f56;
+  color: $dark-blue;
   cursor: pointer;
 }
 
@@ -121,24 +77,25 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e0e8ff;
+  background-color: $pale-blue;
   z-index: -1;
 }
 
 .description {
   margin-bottom: 25px;
-  color: #7280a7;
+  color: $desaturated-blue;
   line-height: 1.5;
 }
 
 .image-container {
   height: auto;
-}
-.image-container img {
-  height: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
+
+  img {
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+  }
 }
 
 .order-content {
@@ -150,27 +107,31 @@ main {
 .order-content h1 {
   font-size: 28px;
   font-weight: 900;
-  color: #1f2f56;
+  color: $dark-blue;
   margin-bottom: 25px;
 }
 
 .price {
   display: flex;
   padding: 20px;
-  background-color: #f5f7ff;
+  background-color: $very-pale-blue;
   border-radius: 15px;
 }
 
-.price p,
-.price a {
-  margin: auto 0;
-}
-.price a {
-  font-weight: 700;
-  margin-left: auto;
-}
-.price img {
-  padding-right: 20px;
+.price {
+  p,
+  a {
+    margin: auto 0;
+  }
+
+  a {
+    font-weight: 700;
+    margin-left: auto;
+  }
+
+  img {
+    padding-right: 20px;
+  }
 }
 
 .price a:hover {
@@ -184,22 +145,23 @@ main {
   margin: auto;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 }
 
 .strong {
   font-weight: 900;
-  color: #1f2f56;
+  color: $dark-blue;
 }
 
 @media (max-width: 1400px) {
   html,
-body {
+  body {
     height: 120vh;
   }
 }
+
 @media (max-width: 576px) {
   button {
     margin: 15px 0;
@@ -210,7 +172,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
   }
-
   .order-content h1 {
     font-size: 22px;
   }
@@ -224,5 +185,3 @@ body {
     padding: 30px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

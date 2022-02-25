@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/marckesin/order-summary-component-challenge-hub/badge/main)](https://www.codefactor.io/repository/github/marckesin/order-summary-component-challenge-hub/overview/main) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=flat&logo=SASS&logoColor=white)
+
 # Frontend Mentor - Order summary card solution
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -38,6 +40,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- SASS
 
 ## Author
 
