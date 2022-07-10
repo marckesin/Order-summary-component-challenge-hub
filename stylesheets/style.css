@@ -165,13 +165,12 @@ main {
   font-weight: 700;
   margin-left: auto;
 }
-.price img {
-  padding-right: 20px;
-}
-
 .price a:hover {
   text-decoration: none;
   color: #6b67e0;
+}
+.price img {
+  padding-right: 20px;
 }
 
 .summary-container {
