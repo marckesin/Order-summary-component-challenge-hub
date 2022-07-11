@@ -11,7 +11,7 @@ button {
   color: hsl(0, 0%, 100%);
   background-color: $bright-blue;
   width: 100%;
-  box-shadow: 0 12px 30px -8px #8785de;
+  box-shadow: 0 12px 30px -8px hsl(241, 57%, 70%);
   font-weight: 600;
   border: none;
   padding: 15px 0;
@@ -21,7 +21,7 @@ button {
   transition: 0.2s;
 
   &:hover {
-    background-color: #6b67e0;
+    background-color: hsl(242, 66%, 64%);
   }
 
   &:active {
@@ -128,7 +128,7 @@ main {
 
     &:hover {
       text-decoration: none;
-      color: #6b67e0;
+      color: hsl(242, 66%, 64%);
     }
   }
 
@@ -145,7 +145,7 @@ main {
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+  box-shadow: hsla(0, 0%, 0%, 0.25) 0 25px 50px -12px;
 }
 
 .strong {
@@ -170,8 +170,10 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
   }
-  .order-content h1 {
-    font-size: 22px;
+  .order-content {
+    h1 {
+      font-size: 22px;
+    }
   }
 
   .summary-container {
